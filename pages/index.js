@@ -1,65 +1,62 @@
-import Head from 'next/head'
-import styles from '../styles/Home.module.css'
+import Head from "next/head";
+import styles from "../styles/Home.module.css";
 
 export default function Home() {
   return (
-    <div className={styles.container}>
+    <div className={styles.body}>
       <Head>
-        <title>Create Next App</title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <title>Return Dev Bootcamp</title>
         <link rel="icon" href="/favicon.ico" />
+        <link
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+          crossorigin="anonymous"
+        />
       </Head>
 
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
-
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
-        </p>
-
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className={styles.card}
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
+      <header className={styles.header}>
+        <div className={styles.apply_now}>
+          <a href="https://forms.gle/B67N1orb6EG68qzs5" target="_blank">
+            <button type="button" className={styles.btn_primary}>
+              Intrested
+            </button>
           </a>
         </div>
-      </main>
+      </header>
 
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
-        </a>
-      </footer>
+      {/* <!-- START The header section of this--> */}
+      <div className={styles.header_block}>
+        <div className={styles.block_logo}>
+          <img className={styles.logo} src="/logo.png" alt="logo" />
+        </div>
+        <h1 className={styles.coming_soon}>Coming soon!</h1>
+        <div className={styles.block_message}>
+          The website is still under construction 👷🏾‍♂️🚧. <br />
+          Please bare with us 😇
+        </div>
+      </div>
+      {/* <!-- END The header section of this--> */}
+
+      <div className={styles.socials_block}>
+        <div className={styles.socials_links}>
+          <a href="https://twitter.com/return_dev">
+            <img src="/twitter.png" />
+          </a>
+          <a href="https://www.instagram.com/returndevbootcamp">
+            <img src="/instagram.png" />
+          </a>
+          <a href="https://www.facebook.com/returnDevBootcamp">
+            <img src="/facebook.png" />
+          </a>
+        </div>
+        <div>
+          <center>Made with 💗 by return dev</center>
+        </div>
+      </div>
     </div>
-  )
+  );
 }
