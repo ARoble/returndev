@@ -1,20 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
-
-*{
-  margin: 0;
-  padding: 0;
-   background-color:#47da77;
-   color:white;
-   font-family: 'Share Tech Mono', monospace;
-}
-html,
-
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
+@import url("https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 * {
-  box-sizing: border-box;
+  font-family: "Share Tech Mono", monospace;
 }

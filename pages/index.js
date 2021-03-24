@@ -3,9 +3,9 @@ import styles from "../styles/Home.module.css";
 
 export default function Home() {
   return (
-    <div className={styles.body}>
+    <div className="h-screen bg-brand-green">
       <Head>
-        <meta charset="UTF-8" />
+        <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
         <title>Return Dev Bootcamp</title>
@@ -18,8 +18,8 @@ export default function Home() {
         />
       </Head>
 
-      <header className={styles.header}>
-        <div className={styles.apply_now}>
+      <header className="h-1/6">
+        <div className="m-10 float-right">
           <a href="https://forms.gle/B67N1orb6EG68qzs5" target="_blank">
             <button type="button" className={styles.btn_primary}>
               Intrested
@@ -29,7 +29,7 @@ export default function Home() {
       </header>
 
       {/* <!-- START The header section of this--> */}
-      <div className={styles.header_block}>
+      <div className="flex justify-center flex-col items-center h-4/6">
         <div className={styles.block_logo}>
           <img className={styles.logo} src="/logo.png" alt="logo" />
         </div>
