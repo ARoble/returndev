@@ -7,7 +7,6 @@ module.exports = {
         brand: {
           darkgreen: "#3eb966",
           green: "#47da77",
-          lightgreen: "#EAFAF0",
         },
       },
     },

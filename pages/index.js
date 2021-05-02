@@ -14,7 +14,7 @@ const navigation = [
 
 export default function Home() {
   return (
-    <div>
+    <div className="h-screen bg-brand-green">
       <Head>
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -25,7 +25,7 @@ export default function Home() {
           href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
           rel="stylesheet"
           integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
-          crossOrigin="anonymous"
+          crossorigin="anonymous"
         />
       </Head>
 
@@ -180,7 +180,6 @@ export default function Home() {
           </p>
         </div>
       </div>
-
       <div
         id="overview"
         className="container mx-auto my-32 grid grid-cols-1 md:grid-cols-2 gap-11"
