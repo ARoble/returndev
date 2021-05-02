@@ -6,7 +6,6 @@ module.exports = {
       colors: {
         brand: {
           green: "#47da77",
-          lightgreen: "#EAFAF0",
         },
       },
     },
