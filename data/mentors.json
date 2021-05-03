@@ -1,0 +1,30 @@
+[
+  {
+    "name": "Ahmed Mire",
+    "role": "Software Engineer.",
+    "bio": " 3+ years experince",
+    "location": "London, UK",
+    "imageUrl": "/images/mentors/ahmed.jpg"
+  },
+  {
+    "name": "Omema Ibrahim",
+    "role": "Software Engineer",
+    "bio": "Bsc Computer Science",
+    "location": "United States",
+    "imageUrl": "/images/mentors/ahmed.jpg"
+  },
+  {
+    "name": "Abokar Hassan",
+    "role": "Software Engineer.",
+    "bio": " 3+ years experince",
+    "location": "Somaliland",
+    "imageUrl": "/images/mentors/ahmed.jpg"
+  },
+  {
+    "name": "Abokar Hassan",
+    "role": "Software Engineer.",
+    "bio": " 3+ years experince",
+    "location": "Somaliland",
+    "imageUrl": "/images/mentors/ahmed.jpg"
+  }
+]
