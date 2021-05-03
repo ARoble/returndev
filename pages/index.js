@@ -4,10 +4,12 @@ import { Fragment } from "react";
 import { Popover, Transition } from "@headlessui/react";
 import { MenuIcon, XIcon } from "@heroicons/react/outline";
 import Image from "next/image";
+import Mentor from "../components/Mentor";
+import mentors from "../data/mentors.json";
 
 const navigation = [
-  { name: "Why", href: "#" },
-  { name: "Overview", href: "#" },
+  { name: "Who this course is for?", href: "#who-course" },
+  { name: "Overview", href: "#overview" },
 ];
 
 export default function Home() {
@@ -41,10 +43,10 @@ export default function Home() {
                       <div className="flex items-center flex-grow flex-shrink-0 lg:flex-grow-0">
                         <div className="flex items-center justify-between w-full md:w-auto">
                           <a href="#">
-                            <span className="sr-only">Workflow</span>
+                            <span className="sr-only">Return dev Logo</span>
                             <img
                               className="h-8 w-auto sm:h-10"
-                              src="hero_image.jpg"
+                              src="/returndev_logo.png"
                             />
                           </a>
                           <div className="-mr-2 flex items-center md:hidden">
@@ -92,7 +94,7 @@ export default function Home() {
                           <div>
                             <img
                               className="h-8 w-auto"
-                              src="https://tailwindui.com/img/logos/workflow-mark-brand-indigo.svg"
+                              src="/returndev_logo.png"
                               alt=""
                             />
                           </div>
@@ -114,12 +116,6 @@ export default function Home() {
                             </a>
                           ))}
                         </div>
-                        <a
-                          href="#"
-                          className="block w-full px-5 py-3 text-center font-medium text-brand-green bg-gray-50 hover:bg-gray-100"
-                        >
-                          Log in
-                        </a>
                       </div>
                     </Popover.Panel>
                   </Transition>
@@ -144,7 +140,7 @@ export default function Home() {
                   <div className="rounded-md shadow">
                     <a
                       href="#"
-                      className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-brand-green hover:bg-indigo-700 md:py-4 md:text-lg md:px-10"
+                      className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-brand-green hover:bg-brand-darkgreen md:py-4 md:text-lg md:px-10"
                     >
                       Get started
                     </a>
@@ -152,7 +148,7 @@ export default function Home() {
                   <div className="sm:mt-0 sm:ml-3">
                     <a
                       href="#"
-                      className="w-full flex items-center justify-center px-8 py-3  text-base font-medium rounded-md text-green-700 bg-brand-lightgreen hover:bg-indigo-200 md:py-4 md:text-lg md:px-10"
+                      className="w-full flex items-center justify-center px-8 py-3  text-base font-medium rounded-md text-brand-green bg-brand-lightgreen hover:bg-green-200 md:py-4 md:text-lg md:px-10"
                     >
                       Live demo
                     </a>
@@ -170,7 +166,7 @@ export default function Home() {
           />
         </div>
       </div>
-      <div className="container mx-auto my-32">
+      <div id="who-course" className="container mx-auto my-32">
         <div className="bg-green-100 p-16 text-center rounded-3xl">
           <h4 className="font-black text-2xl mb-4">Who this course is for?</h4>
           <p>
@@ -183,7 +179,10 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="container mx-auto my-32 grid grid-cols-2 gap-11">
+      <div
+        id="overview"
+        className="container mx-auto my-32 grid grid-cols-2 gap-11"
+      >
         <div className="bg-green-100 p-16 text-center rounded-3xl">
           <h4 className="font-black text-2xl mb-4 text-left">Pre bootcamp</h4>
           <p className=" mb-2 text-left uppercase text-sm">Topics:</p>
@@ -219,20 +218,66 @@ export default function Home() {
 
       <div className="container mx-auto my-32">
         <h2 className="text-2xl text-black">Tech stack we teach</h2>
-        <div className="grid grid-cols-4">
-          <img src="/images/icons/git-original-wordmark.svg" />
-          <img src="/images/icons/nodejs-original-wordmark.svg" />
-          <img src="/images/icons/html5-plain-wordmark.svg" />
-          <img src="/images/icons/css3-plain-wordmark.svg" />
-          <img src="/images/icons/react-original-wordmark.svg" />
-          <img src="/images/icons/mysql-original-wordmark.svg" />
-          <img src="/images/icons/javascript-original.svg" />
+        <div className="grid grid-cols-3 md:grid-cols-7 my-5 gap-5 md:gap-3">
+          <Image
+            width={96}
+            height={96}
+            src="/images/icons/git-original-wordmark.svg"
+          />
+          <Image
+            width={96}
+            height={96}
+            src="/images/icons/nodejs-original-wordmark.svg"
+          />
+          <Image
+            width={96}
+            layout="responsive"
+            height={40}
+            src="/images/icons/html5-plain.svg"
+          />
+          <Image
+            width={96}
+            layout="responsive"
+            height={60}
+            src="/images/icons/css3-plain.svg"
+          />
+          <Image
+            width={96}
+            height={96}
+            src="/images/icons/react-original-wordmark.svg"
+          />
+          <Image
+            width={96}
+            height={96}
+            src="/images/icons/mysql-original-wordmark.svg"
+          />
+          <Image
+            className="h-16 w-16"
+            width={96}
+            height={96}
+            src="/images/icons/javascript-original.svg"
+          />
         </div>
       </div>
       <div className="container mx-auto my-32">
         <h2 className="text-2xl text-black">Team</h2>
-        <div className="grid grid-cols-4"></div>
+        <div className="grid grid-cols-4 my-4">
+          {mentors.map(({ name, bio, imageUrl, location, role }) => {
+            return (
+              <Mentor
+                name={name}
+                role={role}
+                bio={bio}
+                imageUrl={imageUrl}
+                location={location}
+              />
+            );
+          })}
+        </div>
       </div>
+      <footer className="bg-brand-green py-14">
+        <img src="/returndev_logo_white.png" className="w-24 mx-auto" />
+      </footer>
     </div>
   );
 }

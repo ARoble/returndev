@@ -12,3 +12,7 @@ li.thunderbolt::marker {
   margin: 0 0.5rem 0 0;
   color: #ff7a18;
 }
+
+a:hover {
+  @apply text-brand-darkgreen;
+}
