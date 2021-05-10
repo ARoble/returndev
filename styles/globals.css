@@ -16,3 +16,7 @@ li.thunderbolt::marker {
 a:hover {
   @apply text-brand-darkgreen;
 }
+
+.heading {
+  @apply text-2xl text-black my-5 inline-block border-b-2 border-brand-green;
+}

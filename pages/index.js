@@ -128,13 +128,15 @@ export default function Home() {
                 <h1 className="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl">
                   <span className="block xl:inline">Learn to code in</span>{" "}
                   <span className="block text-brand-green xl:inline">
-                    in 24 weeks
+                    in 16 weeks
                   </span>
                 </h1>
-                <p className="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
-                  Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure
-                  qui lorem cupidatat commodo. Elit sunt amet fugiat veniam
-                  occaecat fugiat aliqua.
+                <p className="my-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
+                  Equip yourself with the skills of a full-stack web developer
+                  through our dynamic classes, expert instruction, and a
+                  cutting-edge curriculum. in 16 weeks you'll be able to code
+                  your own web applications from scratch and kickstart your new
+                  career in tech.
                 </p>
                 <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
                   <div className="rounded-md shadow">
@@ -170,18 +172,18 @@ export default function Home() {
         <div className="bg-green-100 p-16 text-center rounded-3xl">
           <h4 className="font-black text-2xl mb-4">Who this course is for?</h4>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti
-            dolorem accusantium, beatae ducimus autem perferendis eveniet velit
-            voluptate labore architecto sit debitis odio, dolor quas quia fugiat
-            dolorum distinctio nihil sapiente a. Odio voluptate, nam dicta
-            sapiente soluta maiores doloribus.
+            This course has no pre-requisites! It's designed for anyone who
+            wants to get started or get better at coding. Whether you're
+            thinking of changing careers, growing you're knowledge or learning
+            exciting new skills to execute the next big idea it's all a matter
+            of just 16 weeks away.
           </p>
         </div>
       </div>
 
       <div
         id="overview"
-        className="container mx-auto my-32 grid grid-cols-2 gap-11"
+        className="container mx-auto my-32 grid grid-cols-1 md:grid-cols-2 gap-11"
       >
         <div className="bg-green-100 p-16 text-center rounded-3xl">
           <h4 className="font-black text-2xl mb-4 text-left">Pre bootcamp</h4>
@@ -192,6 +194,7 @@ export default function Home() {
             <li className="thunderbolt">
               JavaScript Fundamentals Part II &amp; DOM Manipulation
             </li>
+            <li className="thunderbolt">Github</li>
           </ul>
         </div>
         <div className="bg-green-100 p-16 text-center rounded-3xl">
@@ -217,7 +220,7 @@ export default function Home() {
       </div>
 
       <div className="container mx-auto my-32">
-        <h2 className="text-2xl text-black">Tech stack we teach</h2>
+        <h2 className="heading">Tech stack we teach</h2>
         <div className="grid grid-cols-3 md:grid-cols-7 my-5 gap-5 md:gap-3">
           <Image
             width={96}
@@ -260,7 +263,47 @@ export default function Home() {
         </div>
       </div>
       <div className="container mx-auto my-32">
-        <h2 className="text-2xl text-black">Team</h2>
+        <h2 className="heading">About us</h2>
+        <p className="my-3">
+          <span className="text-brand-green font-bold">Return dev</span> is
+          Somaliland’s very first coding bootcamp in Hargeisa that aims to
+          graduate thousands of skilled Software engineers in Somaliland. We
+          offer students high quality training, from experienced local and
+          international instructors.{" "}
+          <span className="text-brand-green font-bold">Return dev</span> ensures
+          that each student that goes through our training, is not only
+          technically equipped but also has all the soft skills needed to work
+          in high-demanding environments by imitating real work stimuli on our
+          programmes.
+        </p>
+        <p className="my-3">
+          The bootcamp was created by a team of educated diaspora based in the
+          UK with the hope of boosting opportunities for young Somali’s through
+          increasing their IT/coding literacy. We strongly believe that in a
+          limited prospect country such as Somaliland empowering young people to
+          learn coding will significantly improve chances of success in their
+          lives.
+        </p>
+        <p className="my-3">
+          The bootcamp will not only be offering strict technical education but
+          also teach professionalism and employability skills through the
+          several mentors and industry experts we have on board. We are
+          currently in the midst of also creating key relationships with
+          Somaliland’s leading firms in aim of placing each of our graduates in
+          the IT market, either locally or nationally, this will ensure that
+          knowledge gained on our programme serves to benefit the local and
+          national economy.
+        </p>
+        <p className="my-3">
+          The world is evolving and some of the most disruptive ideas are based
+          around technology.{" "}
+          <span className="text-brand-green font-bold">Return dev</span> will
+          seek to produce, cultivate, and develop the next line of innovators in
+          Somaliland and all of East Africa.
+        </p>
+      </div>
+      <div className="container mx-auto my-32">
+        <h2 className="heading">Team</h2>
         <div className="grid grid-cols-4 my-4">
           {mentors.map(({ name, bio, imageUrl, location, role }) => {
             return (
