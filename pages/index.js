@@ -141,13 +141,13 @@ export default function Home() {
                 <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
                   <div className="rounded-md shadow">
                     <a
-                      href="#"
+                      href="https://docs.google.com/forms/d/e/1FAIpQLSdO4pnxZfR5xVXH2D_xEHx6X0NrZgrtM4GChGe8RpJ8QZuvVQ/viewform"
                       className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-brand-green hover:bg-brand-darkgreen md:py-4 md:text-lg md:px-10"
                     >
-                      Get started
+                      Apply now
                     </a>
                   </div>
-                  <div className="sm:mt-0 sm:ml-3">
+                  <div className="hidden sm:mt-0 sm:ml-3">
                     <a
                       href="#"
                       className="w-full flex items-center justify-center px-8 py-3  text-base font-medium rounded-md text-brand-green bg-brand-lightgreen hover:bg-green-200 md:py-4 md:text-lg md:px-10"
@@ -169,7 +169,7 @@ export default function Home() {
         </div>
       </div>
       <div id="who-course" className="container mx-auto my-32">
-        <div className="bg-green-100 p-16 text-center rounded-3xl">
+        <div className="bg-green-100 p-5 md:p-16 text-center rounded-3xl">
           <h4 className="font-black text-2xl mb-4">Who this course is for?</h4>
           <p>
             This course has no pre-requisites! It's designed for anyone who
@@ -185,7 +185,7 @@ export default function Home() {
         id="overview"
         className="container mx-auto my-32 grid grid-cols-1 md:grid-cols-2 gap-11"
       >
-        <div className="bg-green-100 p-16 text-center rounded-3xl">
+        <div className="bg-green-100  p-5 md:p-16 text-center rounded-3xl">
           <h4 className="font-black text-2xl mb-4 text-left">Pre bootcamp</h4>
           <p className=" mb-2 text-left uppercase text-sm">Topics:</p>
           <ul className="text-left text-base">
@@ -197,7 +197,7 @@ export default function Home() {
             <li className="thunderbolt">Github</li>
           </ul>
         </div>
-        <div className="bg-green-100 p-16 text-center rounded-3xl">
+        <div className="bg-green-100  p-5 md:p-16 text-center rounded-3xl">
           <h4 className="font-black text-2xl mb-4 text-left">Bootcamp</h4>
           <p className=" mb-2 text-left uppercase text-sm">Topics:</p>
           <ul className="text-left text-base">
@@ -304,7 +304,7 @@ export default function Home() {
       </div>
       <div className="container mx-auto my-32">
         <h2 className="heading">Team</h2>
-        <div className="grid grid-cols-4 my-4">
+        <div className="grid grid-cols-1 md:grid-cols-4 my-4">
           {mentors.map(({ name, bio, imageUrl, location, role }) => {
             return (
               <Mentor
