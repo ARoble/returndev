@@ -12,9 +12,10 @@ const navigation = [
   { name: "Overview", href: "#overview" },
 ];
 
+
 export default function Home() {
   return (
-    <div>
+    <div className="h-screen bg-brand-green">
       <Head>
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -25,7 +26,7 @@ export default function Home() {
           href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
           rel="stylesheet"
           integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
-          crossOrigin="anonymous"
+          crossorigin="anonymous"
         />
       </Head>
 
@@ -178,8 +179,9 @@ export default function Home() {
             exciting new skills to execute the next big idea it's all a matter
             of just 16 weeks away.
           </p>
+
         </div>
-      </div>
+      </header>
 
       <div
         id="overview"
