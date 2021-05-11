@@ -301,7 +301,7 @@ export default function Home() {
           Somaliland and all of East Africa.
         </p>
       </div>
-      <div className="container mx-auto my-32">
+      <div className="hidden container mx-auto my-32">
         <h2 className="heading">Team</h2>
         <div className="grid grid-cols-1 md:grid-cols-4 my-4">
           {mentors.map(({ name, bio, imageUrl, location, role }) => {
