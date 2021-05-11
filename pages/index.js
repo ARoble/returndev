@@ -25,7 +25,7 @@ export default function Home() {
           href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
           rel="stylesheet"
           integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
-          crossorigin="anonymous"
+          crossOrigin="anonymous"
         />
       </Head>
 
@@ -305,9 +305,10 @@ export default function Home() {
       <div className="hidden container mx-auto my-32">
         <h2 className="heading">Team</h2>
         <div className="grid grid-cols-1 md:grid-cols-4 my-4">
-          {mentors.map(({ name, bio, imageUrl, location, role }) => {
+          {mentors.map(({ name, bio, imageUrl, location, role }, index) => {
             return (
               <Mentor
+                key={index}
                 name={name}
                 role={role}
                 bio={bio}

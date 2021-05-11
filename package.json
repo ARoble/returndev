@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "next dev -p 3001",
     "build": "next build",
+    "serve": "next serve",
     "start": "next start -p $PORT"
   },
   "dependencies": {
