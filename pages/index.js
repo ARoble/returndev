@@ -225,40 +225,40 @@ export default function Home() {
           <Image
             width={96}
             height={96}
-            src="/images/icons/git-original-wordmark.svg"
+            src="/images/git-original-wordmark.svg"
           />
           <Image
             width={96}
             height={96}
-            src="/images/icons/nodejs-original-wordmark.svg"
+            src="/images/nodejs-original-wordmark.svg"
           />
           <Image
             width={96}
             layout="responsive"
             height={40}
-            src="/images/icons/html5-plain.svg"
+            src="/images/html5-plain.svg"
           />
           <Image
             width={96}
             layout="responsive"
             height={60}
-            src="/images/icons/css3-plain.svg"
+            src="/images/css3-plain.svg"
           />
           <Image
             width={96}
             height={96}
-            src="/images/icons/react-original-wordmark.svg"
+            src="/images/react-original-wordmark.svg"
           />
           <Image
             width={96}
             height={96}
-            src="/images/icons/mysql-original-wordmark.svg"
+            src="/images/mysql-original-wordmark.svg"
           />
           <Image
             className="h-16 w-16"
             width={96}
             height={96}
-            src="/images/icons/javascript-original.svg"
+            src="/images/javascript-original.svg"
           />
         </div>
       </div>
