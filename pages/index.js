@@ -222,39 +222,35 @@ export default function Home() {
       <div className="container mx-auto my-32">
         <h2 className="heading">Tech stack we teach</h2>
         <div className="grid grid-cols-3 md:grid-cols-7 my-5 gap-5 md:gap-3">
-          <Image
-            width={96}
-            height={96}
-            src="/images/git-original-wordmark.svg"
-          />
-          <Image
+          <img width={96} height={96} src="/images/git-original-wordmark.svg" />
+          <img
             width={96}
             height={96}
             src="/images/nodejs-original-wordmark.svg"
           />
-          <Image
+          <img
             width={96}
             layout="responsive"
             height={40}
             src="/images/html5-plain.svg"
           />
-          <Image
+          <img
             width={96}
             layout="responsive"
             height={60}
             src="/images/css3-plain.svg"
           />
-          <Image
+          <img
             width={96}
             height={96}
             src="/images/react-original-wordmark.svg"
           />
-          <Image
+          <img
             width={96}
             height={96}
             src="/images/mysql-original-wordmark.svg"
           />
-          <Image
+          <img
             className="h-16 w-16"
             width={96}
             height={96}
