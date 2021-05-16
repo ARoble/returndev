@@ -14,7 +14,7 @@ const navigation = [
 
 export default function Home() {
   return (
-    <div className="h-screen bg-brand-green">
+    <div className="h-screen ">
       <Head>
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
