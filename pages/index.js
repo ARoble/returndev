@@ -128,7 +128,7 @@ export default function Home() {
                 <h1 className="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl">
                   <span className="block xl:inline">Learn to code in</span>{" "}
                   <span className="block text-brand-green xl:inline">
-                    in 16 weeks
+                    16 weeks
                   </span>
                 </h1>
                 <p className="my-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
